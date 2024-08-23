@@ -36,14 +36,16 @@
 
 </head>
 
-<body class="font-manrope">
-    <header class="lg:max-w-screen-lg mx-auto mt-6 lg:mt-8 px-4">
-        <!-- Navigation Bar -->
+<body class="font-manrope bg-neutral-200 max-w-screen-2xl mx-auto">
+    <header class="bg-gradient-to-t from-white to-[#ffffff00]">
+        <!-- Div for fixing position of the header -->
+    <div class="max-w-screen-lg mx-auto pt-6 pb-8 md:pb-12 lg:pb-[80px] lg:pt-8 px-4">
+            <!-- Navigation Bar -->
         <nav class="flex justify-between items-center sm:justify-evenly gap-6 align-middle">
 
             <!-- Brand Name -->
             <!-- Navbar Start -->
-            <a href="index.html" class="flex gap-2 items-center duration-300 ease-linear hover:opacity-85">
+            <a href="index.html" class=" flex gap-2 items-center duration-300 ease-linear hover:opacity-85">
                 <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center">
                     <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
                 </div>
@@ -114,7 +116,7 @@
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#blogs">Blogs</a></li>
                         <li><a href="#contactus">Contact Us</a></li>
-                        <hr>
+                        <hr class="sm:hidden">
                         <li class="sm:hidden"><a href="#search">
                                 <i class="fa-solid fa-magnifying-glass"></i></i>
                                 <span>Search</span>
@@ -148,14 +150,74 @@
                 </p>
                 <button class="group btn flex bg-[#acef5fb0] hover:bg-[#acef5f] sm:max-w-[56] flex-nowrap rounded-[32px] border-[#ABEF5F] w-full sm:w-auto mx-auto duration-300 ease-linear mt-5">
                     <span class="font-bold text-xl">View Details</span>
-                    <div class="bg-[#8dcd43] group-hover:bg-[#74a23fd5] w-8 h-8 rounded-full flex items-center justify-center duration-1000 ease-linear">
+                    <div class="bg-[#acef5f] group-hover:bg-[#74a23fd5] w-8 h-8 rounded-full flex items-center justify-center duration-1000 ease-linear">
                         <i class="fa-solid fa-arrow-right-long -rotate-45 group-hover:text-white duration-1000 ease-linear"></i>
                     </div>
                 </button>
             </div>
         </section>
+    </div>
     </header>
 
+    <!-- max-w-screen-lg mx-auto -->
+    <main>
+        <!-- About us Section -->
+        <section class="">
+            <!-- Adjusting Max Width -->
+            <div class="max-w-screen-lg mx-auto px-4 py-8 md:py-12 flex lg:items-stretch gap-8 lg:py-24 relative flex-col lg:flex-row">
+                <!-- Floating image -->
+                <div class="hidden lg:block lg:absolute top-10 -left-8">
+                    <img src="assets/Vector.png" alt="">
+                </div>
+                <!-- Text and Card -->
+                <div class="lg:max-w-[550px] grid gap-5 text-center lg:text-start">
+                    <!-- Text Container -->
+                    <div class="sm:col-span-2 lg:col-span-1">
+                        <small class="text-base font-bold lg:pl-4">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <span>About Us</span>
+                        </small>
+                        <!-- Title -->
+                        <h1 class="font-bold text-2xl lg:text-4xl mt-4">
+                            We design thoughtful, liveable spaces
+                        </h1>
+                        <!-- Description -->
+                        <p class="text-sm md:text-base font-medium mt-6 text-[#494949]">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+                        </p>
+                    </div>
+                    <!-- Card - 01 -->
+                    <div class=" bg-white rounded-lg flex p-4 gap-5 text-start items-center">
+                        <img class="h-1/2" src="assets/commercial.png" alt="">
+                        <div>
+                            <h3 class="mb-2 text-[#494949] font-extrabold text-base lg:text-xl">
+                                Commercial
+                            </h3>
+                            <p class="font-medium text-sm lg:text-base text-[#737373]">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card - 01 -->
+                    <div class=" bg-white rounded-lg flex p-4 gap-5 text-start items-center">
+                        <img class="h-1/2" src="assets/commercial.png" alt="">
+                        <div>
+                            <h3 class="mb-2 text-[#494949] font-extrabold text-base lg:text-xl">
+                                Commercial
+                            </h3>
+                            <p class="font-medium text-sm lg:text-base text-[#737373]">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                        </div>
+                    </div>
+                 </div>
+                <!-- Image Container -->
+                <div class="lg:max-h-max max-h-[500px] flex items-center overflow-hidden rounded-xl">
+                    <img class="lg:h-full w-full" src="assets/Rectangle.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

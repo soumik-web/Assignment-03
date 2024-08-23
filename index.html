@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,50 +20,102 @@
     <!-- Customize Tailwind -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                // primary: '#ABEF5F',
-              },
-              fontFamily: {
-                manrope: ['Manrope', 'sans-serif'],
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        // primary: '#ABEF5F',
+                    },
+                    fontFamily: {
+                        manrope: ['Manrope', 'sans-serif'],
+                    }
+                }
             }
-          }
         }
-      </script>
-      
+    </script>
+
 </head>
+
 <body>
-    <header class="lg:max-w-screen-lg mx-auto mt-8">
+    <header class="lg:max-w-screen-lg mx-auto mt-6 lg:mt-8">
         <!-- Navigation Bar -->
-        <nav class="flex justify-between px-5 items-center">
+        <nav class="flex justify-between px-5 items-center sm:justify-evenly gap-8 align-middle">
+
             <!-- Brand Name -->
-             <div class="flex gap-2 items-center">
+             <!-- Navbar Start -->
+            <div class="flex gap-2 items-center">
                 <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center">
                     <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
                 </div>
                 <h1 class="text-3xl font-extrabold">Rinterio</h1>
-             </div>
-             <!-- Menu Button For Small /device-->
-              <div class="dropdown dropdown-end md:hidden">
-                <div tabindex="0" role="button" class="m-1 w-11 h-11 border-2 rounded-full flex items-center justify-center focus:bg-gray-300 focus-within:opacity-60">
-                  <i class="fa-solid fa-bars text-gray-500 text-xl hover:opacity-80"></i>
-                </div>
-                <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow border border-gray-100">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Portfolio</a></li>
-                  <li><a href="">Blogs</a></li>
-                  <li><a href="">Contact Us</a></li>
-                  <li><a href="">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span>Cart</span>
-                  </a></li>
+            </div>
+
+
+            <!-- Navbar links -->
+            <!-- Navbar Center -->
+            <div class="hidden lg:flex lg:grow">
+                <ul class="flex justify-evenly items-center w-full">
+                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Home</a></li>
+                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Services</a></li>
+                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Portfolio</a></li>
+                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Blogs</a></li>
+                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Contact Us</a></li>
                 </ul>
-              </div>
+            </div>
+
+            <!-- Navbar Buttons -->
+            <!-- Navbar End -->
+            <div class="flex gap-4">
+
+                <!-- Navbar Buttons -->
+                <div class="hidden gap-4 sm:flex">
+
+                    <!-- Search Button -->
+                    <button class="btn rounded-full border border-gray-200 bg-white hover:opacity-75">
+                        <i class="fa-solid fa-magnifying-glass textbase"></i>
+                    </button>
+
+                    <!-- Cart Button -->
+                    <button class="btn rounded-full border border-gray-200 bg-white hover:opacity-75">
+                        <i class="fa-solid fa-cart-shopping text-base"></i>
+                    </button>
+
+                    <!-- Book Consult Button -->
+                    <button class="btn bg-[#ABEF5F] rounded-[32px] hover:bg-[#acef5fb0] hover:border-[#ABEF5F]  hover:opacity-90">
+                        <span class="font-bold text-xl">Book Consult</span>
+                        <div class="bg-[#1C1C1C] w-8 h-8 rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                        </div>
+                    </button>
+                </div>
+
+
+                <!-- Menu Button For Small /device-->
+                <div class="dropdown dropdown-end lg:hidden">
+                    <div tabindex="0" role="button"
+                        class="btn w-12 h-12 border bg-white border-gray-200 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-bars text-gray-500 text-xl hover:opacity-75"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow border border-gray-100">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li class="sm:hidden"><a href="">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Cart</span>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+
         </nav>
+
+        <!-- Hero Contain -->
     </header>
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <!-- Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome(icons) -->
+    <script src="https://kit.fontawesome.com/3d667e6c8c.js" crossorigin="anonymous"></script>
+
+    <!-- Customize Tailwind -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                // primary: '#ABEF5F',
+              },
+              fontFamily: {
+                manrope: ['Manrope', 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+      
+</head>
+<body>
+    <header class="lg:max-w-screen-lg mx-auto mt-8">
+        <!-- Navigation Bar -->
+        <nav class="flex justify-between px-5 items-center">
+            <!-- Brand Name -->
+             <div class="flex gap-2 items-center">
+                <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
+                </div>
+                <h1 class="text-3xl font-extrabold">Rinterio</h1>
+             </div>
+             <!-- Menu Button For Small /device-->
+              <div class="dropdown dropdown-end md:hidden">
+                <div tabindex="0" role="button" class="m-1 w-11 h-11 border-2 rounded-full flex items-center justify-center focus:bg-gray-300 focus-within:opacity-60">
+                  <i class="fa-solid fa-bars text-gray-500 text-xl hover:opacity-80"></i>
+                </div>
+                <ul tabindex="0" class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow border border-gray-100">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  <li><a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                  </a></li>
+                </ul>
+              </div>
+        </nav>
+    </header>
+</body>
+</html>

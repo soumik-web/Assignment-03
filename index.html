@@ -36,30 +36,30 @@
 
 </head>
 
-<body>
+<body class="font-manrope">
     <header class="lg:max-w-screen-lg mx-auto mt-6 lg:mt-8">
         <!-- Navigation Bar -->
-        <nav class="flex justify-between px-5 items-center sm:justify-evenly gap-8 align-middle">
+        <nav class="flex justify-between px-5 items-center sm:justify-evenly gap-6 align-middle">
 
             <!-- Brand Name -->
-             <!-- Navbar Start -->
-            <div class="flex gap-2 items-center">
+            <!-- Navbar Start -->
+            <a href="index.html" class="flex gap-2 items-center duration-300 ease-linear hover:opacity-85">
                 <div class="bg-[#ABEF5F] w-8 h-8 rounded-full flex items-center justify-center">
                     <i class="fa-solid fa-arrow-right-long -rotate-45"></i>
                 </div>
                 <h1 class="text-3xl font-extrabold">Rinterio</h1>
-            </div>
+            </a>
 
 
             <!-- Navbar links -->
             <!-- Navbar Center -->
             <div class="hidden lg:flex lg:grow">
                 <ul class="flex justify-evenly items-center w-full">
-                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Home</a></li>
-                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Services</a></li>
-                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Portfolio</a></li>
-                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Blogs</a></li>
-                    <li><a href="" class="btn btn-ghost btn-sm text-base text-[#494949]">Contact Us</a></li>
+                    <li><a href="#home" class="btn btn-ghost btn-sm text-base text-[#494949]  duration-300 ease-linear hover:bg-[#acef5fb0]">Home</a></li>
+                    <li><a href="#services" class="btn btn-ghost btn-sm text-base text-[#494949] duration-300 ease-linear hover:bg-[#acef5fb0]">Services</a></li>
+                    <li><a href="#portfolio" class="btn btn-ghost btn-sm text-base text-[#494949] duration-300 ease-linear hover:bg-[#acef5fb0]">Portfolio</a></li>
+                    <li><a href="#blogs" class="btn btn-ghost btn-sm text-base text-[#494949] duration-300 ease-linear hover:bg-[#acef5fb0]">Blogs</a></li>
+                    <li><a href="#contactus" class="btn btn-ghost btn-sm text-base text-[#494949] duration-300 ease-linear hover:bg-[#acef5fb0]">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -71,18 +71,29 @@
                 <div class="hidden gap-4 sm:flex">
 
                     <!-- Search Button -->
-                    <button class="btn rounded-full border border-gray-200 bg-white hover:opacity-75">
-                        <i class="fa-solid fa-magnifying-glass textbase"></i>
-                    </button>
+                    <div class="dropdown dropdown-end">
+                        <button
+                            class="btn w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 bg-white duration-300 ease-linear hover:bg-[#acef5fb0]">
+                            <i class="fa-solid fa-magnifying-glass text-base"></i>
+                        </button>
+                        <!-- Search Bar -->
+                        <div class="dropdown-content search-bar mt-4">
+                            <input type="text" placeholder="Search..."
+                                class="w-[30vw] px-4 py-2 border border-gray-200 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ABEF5F]" />
+                        </div>
+                    </div>
 
                     <!-- Cart Button -->
-                    <button class="btn rounded-full border border-gray-200 bg-white hover:opacity-75">
-                        <i class="fa-solid fa-cart-shopping text-base"></i>
+                    <button 
+                        class="btn w-12 h-12 flex items-center justify-center rounded-full border border-gray-200 bg-white duration-300 ease-linear hover:bg-[#acef5fb0] active:translate-y-[2px] active:shadow-inner">
+                        <i class="fa-solid fa-cart-shopping text-base" ></i>
                     </button>
 
+
                     <!-- Book Consult Button -->
-                    <button class="btn bg-[#ABEF5F] rounded-[32px] hover:bg-[#acef5fb0] hover:border-[#ABEF5F]  hover:opacity-90">
-                        <span class="font-bold text-xl">Book Consult</span>
+                    <button
+                        class="btn bg-[#ABEF5F] rounded-[32px] hover:bg-[#acef5fb0] hover:border-[#ABEF5F]  hover:opacity-90 duration-300 ease-linear">
+                        <span class="font-extrabold text-xl">Book Consult</span>
                         <div class="bg-[#1C1C1C] w-8 h-8 rounded-full flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
                         </div>
@@ -98,12 +109,17 @@
                     </div>
                     <ul tabindex="0"
                         class="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow border border-gray-100">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li class="sm:hidden"><a href="">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                        <li><a href="#contactus">Contact Us</a></li>
+                        <hr>
+                        <li class="sm:hidden"><a href="#search">
+                                <i class="fa-solid fa-magnifying-glass"></i></i>
+                                <span>Search</span>
+                            </a></li>
+                        <li class="sm:hidden"><a href="#cart">
                                 <i class="fa-solid fa-cart-shopping"></i>
                                 <span>Cart</span>
                             </a></li>
@@ -116,6 +132,7 @@
 
         <!-- Hero Contain -->
     </header>
+
 </body>
 
 </html>

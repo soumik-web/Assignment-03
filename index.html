@@ -39,7 +39,7 @@
 <body class="font-manrope bg-neutral-200 max-w-screen-2xl mx-auto">
     <header class="bg-gradient-to-t from-white to-[#ffffff00]">
         <!-- Div for fixing position of the header -->
-        <div class="max-w-screen-lg mx-auto pt-8 pb-12 md:pb-12 lg:pb-[80px] lg:pt-8 px-6">
+        <div class="max-w-screen-lg mx-auto pt-6 pb-12 lg:pt-8 px-6">
             <!-- Navigation Bar -->
             <nav class="flex justify-between items-center gap-6 align-middle">
 
@@ -143,7 +143,7 @@
             </nav>
 
             <!-- Hero Contain -->
-            <section class="flex flex-col items-center justify-center text-center pt-8">
+            <section class="flex flex-col items-center justify-center text-center pt-8 sm:pt-4">
                 <!-- Image -->
                 <div>
                     <img src="assets/banner.png" alt="">
@@ -151,16 +151,17 @@
                 <!-- Content -->
                 <div>
                     <!-- Title -->
-                    <h1 class="font-extrabold text-3xl leading-10 mt-8 lg:text-5xl sm:max-w-3xl mx-auto">
+                    <h1
+                        class="font-extrabold text-3xl leading-10 sm:leading-none mt-10 sm:mt-6 lg:text-5xl sm:max-w-3xl mx-auto">
                         A barn house of this design has a striking appearance
                     </h1>
                     <!-- Description -->
-                    <p class="text-base font-medium text-[#494949] mt-8 sm:max-w-2xl lg:max-w-4xl mx-auto ">
+                    <p class="text-base leading-7 font-medium text-[#494949] mt-8 sm:max-w-2xl lg:max-w-4xl mx-auto ">
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring
                         weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                     </p>
                     <button
-                        class="group btn flex bg-[#acef5fb0] hover:bg-[#acef5f] sm:max-w-[56] flex-nowrap rounded-[32px] border-[#ABEF5F] w-full sm:w-auto mx-auto duration-300 ease-linear mt-8 p-8">
+                        class="group btn flex bg-[#acef5fb0] hover:bg-[#acef5f] sm:max-w-[56] flex-nowrap rounded-[32px] border-[#ABEF5F] w-full sm:w-auto mx-auto duration-300 ease-linear mt-8 p-6">
                         <span class="font-bold text-xl">View Details</span>
                         <div
                             class="bg-[#acef5f] group-hover:bg-[#74a23fd5] w-8 h-8 rounded-full flex items-center justify-center duration-1000 ease-linear">
@@ -181,14 +182,14 @@
             <div
                 class="max-w-screen-lg mx-auto px-6 pt-10 md:pt-12 flex lg:items-stretch gap-6 md:gap-8 lg:pt-24 relative flex-col lg:flex-row">
                 <!-- Floating image -->
-                <div class="hidden lg:block lg:absolute top-10 -left-8">
+                <div class="hidden lg:block lg:absolute top-10 -left-5">
                     <img src="assets/Vector.png" alt="">
                 </div>
                 <!-- Text and Card -->
                 <div class="lg:max-w-[550px] grid gap-4 md:gap-5 text-center lg:text-start">
                     <!-- Text Container -->
                     <div class="sm:col-span-2 lg:col-span-1">
-                        <small class="text-base font-bold text-[#494949] py-1 px-2 rounded-2xl lg:ml-4 bg-white">
+                        <small class="text-base font-bold text-[#494949] py-1 px-3 rounded-2xl lg:ml-4 bg-white">
                             <i class="fa-solid fa-arrow-right-long"></i>
                             <span>About Us</span>
                         </small>
@@ -237,7 +238,8 @@
         <!-- Stats Section -->
         <section class="max-w-screen-lg mx-auto">
             <!-- Cards -->
-            <div class="mx-6 bg-white mt-8 rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center lg:justify-between lg:gap-x-0 py-6 sm:py-2">
+            <div
+                class="mx-6 bg-white mt-8 rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-items-center lg:justify-between gap-8 lg:gap-0 py-10 sm:gap-x-0 sm:px-2 sm:py-16 lg:py-2">
                 <!-- Card-01 -->
                 <div class="w-64 h-36 flex flex-col justify-center items-center gap-2">
                     <div class="text-[#737373] text-4xl">
@@ -291,10 +293,10 @@
         </section>
 
         <!-- How We Work Section -->
-        <section class="max-w-screen-lg mx-auto px-6 pt-8 sm:pt-16 lg:pt-24">
+        <section class="max-w-screen-lg mx-auto px-6 pt-8 sm:pt-16 lg:pt-24 pb-12">
             <!-- Text Contents -->
             <div class="text-center">
-                <small class="text-base font-bold text-[#494949] py-1 px-2 rounded-2xl lg:ml-4 bg-white">
+                <small class="text-base font-bold text-[#494949] py-1 px-4 rounded-2xl lg:ml-4 bg-white">
                     <i class="fa-solid fa-arrow-right-long"></i>
                     <span>How we works</span>
                 </small>
@@ -304,7 +306,8 @@
                 </h1>
                 <!-- Description -->
                 <p class="text-sm md:text-base font-medium my-5 text-[#494949] max-w-2xl mx-auto">
-                    The barn house captivates with its blend of rustic charm and  modern sophistication, featuring weathered wood, sleek metal accents.
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                    weathered wood, sleek metal accents.
                 </p>
             </div>
             <!-- Cards Container -->
@@ -357,10 +360,99 @@
                         The barn house captivates with its blend of rustic charm and modern.
                     </p>
                 </div>
-                
+
             </div>
         </section>
-        
+
+        <!-- Latest Work Section -->
+        <section class="lg:bg-white">
+            <div class="max-w-screen-lg mx-auto px-6 pt-12">
+                <!-- Text Contents -->
+                <div class="text-center">
+                    <small class="text-base font-bold text-[#494949] py-1 px-4 rounded-2xl lg:ml-4 bg-[#abef5f33]">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <span>Explore our Latest works</span>
+                    </small>
+                    <!-- Title -->
+                    <h1 class="font-bold text-2xl sm:text-3xl lg:text-4xl mt-6">
+                        Our Latest Portfolio
+                    </h1>
+                    <!-- Description -->
+                    <p class="text-sm md:text-base font-medium my-5 text-[#494949] max-w-2xl mx-auto">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek metal accents.
+                    </p>
+                </div>
+                <!-- Cards Containder -->
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-12">
+                    <!-- Card-01 -->
+                    <div class="border lg:order-1 lg:col-span-8 border-[#E9E9E9] bg-white rounded-2xl p-5 flex flex-col gap-6 sm:col-span-2 sm:flex-row">
+                        <!-- Image -->
+                        <img class="w-full h-full" src="assets/img1.png" alt="">
+                        <!-- Text -->
+                        <div class="flex flex-col justify-center gap-4">
+                            <h3 class="text-xl sm:text-lg font-extrabold text-[#494949] my-1">
+                                Commercial
+                            </h3>
+                            <p class="text-base sm:text-sm font-medium text-[#737373]">
+                                The barn house captivates with its blend of rustic charm and modern. The barn house
+                                captivates with its blend of rustic charm and modern .
+                            </p>
+                            <a href="#" class="group flex duration-300 ease-linear">
+                                <span class="font-extrabold text-base text-[#212121] group-hover:opacity-90">View
+                                    Details</span>
+                                <div
+                                    class="bg-[#acef5f] ml-2 w-6 h-6 rounded-full flex items-center justify-center duration-1000 ease-linear">
+                                    <i
+                                        class="fa-solid fa-arrow-right-long -rotate-45 group-hover:text-white duration-1000 ease-linear"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card-02 -->
+                    <div class="border lg:order-2 lg:col-span-4 bg-white border-[#E9E9E9] rounded-2xl p-5">
+                        <img class="w-full h-full" src="assets/img2.png" alt="">
+                    </div>
+                    <!-- Card-03 -->
+                    <div class="border bg-white border-[#E9E9E9] rounded-2xl p-5 lg:hidden">
+                        <img class="w-full h-full" src="assets/img5.png" alt="">
+                    </div>
+                    <!-- Card-04 -->
+                    <div class="border lg:order-4 lg:col-span-6 bg-white border-[#E9E9E9] rounded-2xl p-5 flex flex-col gap-6 sm:col-span-2 sm:flex-row">
+                        <!-- Image -->
+                        <img class="w-full h-full" src="assets/img4.png" alt="">
+                        <!-- Text -->
+                        <div class="flex flex-col justify-center gap-4">
+                            <h3 class="text-xl sm:text-lg font-extrabold text-[#494949] my-1">
+                                Commercial
+                            </h3>
+                            <p class="text-base sm:text-sm font-medium text-[#737373]">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                            <a href="#" class="group flex duration-300 ease-linear">
+                                <span class="font-extrabold text-base text-[#212121] group-hover:opacity-90">
+                                    View Details
+                                </span>
+                                <div
+                                    class="bg-[#acef5f] ml-2 w-6 h-6 rounded-full flex items-center justify-center duration-1000 ease-linear">
+                                    <i
+                                        class="fa-solid fa-arrow-right-long -rotate-45 group-hover:text-white duration-1000 ease-linear"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card-05 -->
+                    <div class="border lg:order-3 lg:col-span-3 bg-white border-[#E9E9E9] rounded-2xl p-5">
+                        <img class="w-full h-full" src="assets/img3.png" alt="">
+                    </div>
+                    <!-- Card-06 -->
+                    <div class="border lg:order-5 lg:col-span-3 bg-white border-[#E9E9E9] rounded-2xl p-5">
+                        <img class="w-full h-full" src="assets/img5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -59,7 +59,7 @@
                 <!-- Navbar Center -->
                 <div class="hidden lg:flex lg:grow">
                     <ul class="flex justify-evenly items-center w-full">
-                        <li><a href="#home"
+                        <li><a href="index.html"
                                 class="btn btn-ghost btn-sm text-base text-[#494949]  duration-300 ease-linear hover:bg-[#acef5fb0]">Home</a>
                         </li>
                         <li><a href="#services"
@@ -367,7 +367,7 @@
         </section>
 
         <!-- Latest Work Section -->
-        <section class="lg:bg-gradient-to-t lg:from-white lg:to-[#ffffff00]">
+        <section id="portfolio" class="lg:bg-gradient-to-t lg:from-white lg:to-[#ffffff00]">
             <div class="max-w-screen-lg mx-auto px-6 lg:pt-12 pb-12">
                 <!-- Text Contents -->
                 <div class="text-center">
@@ -457,8 +457,78 @@
             </div>
         </section>
 
+
+        <!-- Challenge Section -->
+        <!-- Service Area -->
+        <section class="max-w-screen-lg mx-auto px-6 pt-8 sm:pt-16 lg:pt-24 pb-12">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Text Container -->
+                <div
+                    class="sm:w-full text-center lg:text-start lg:max-w-64 flex flex-col items-center justify-center lg:items-start lg:gap-2">
+                    <small class="text-base font-bold text-[#494949] py-1 px-3 rounded-2xl bg-white w-fit">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <span>Explore City</span>
+                    </small>
+                    <!-- Title -->
+                    <h1 class="font-extrabold text-xl lg:text-2xl mt-2">
+                        Service Area
+                    </h1>
+                    <!-- Description -->
+                    <p class="text-sm font-medium mt-2 text-[#494949]">
+                        The barn house captivates with its blend of rustic charm.
+                    </p>
+                </div>
+                <!-- Card Container -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 w-full gap-8 sm:gap-4">
+                    <!-- Card-01(Dhaka) -->
+                    <div class="relative">
+                        <div
+                            class="hover:cursor-pointer bg-[url(./assets/dhaka.jpg)] bg-cover bg-center bg-no-repeat text-white p-10 hover:p-10 rounded-3xl flex flex-col gap-80 lg:gap-96 grow backdrop:brightness-75 hover:brightness-125 backdrop-blur-[1px] hover:blur-none duration-300 ease-in-out group  hover:w-full hover:lg:absolute ">
+                            <div class="">
+                                <small class="group-hover:text-lg group-hover:text-lime-600">23 Properties</small>
+                                <h6 class="font-bold group-hover:text-xl group-hover:text-lime-600">Dhaka</h6>
+                            </div>
+                            <div class="flex justify-between items-center font-bold group-hover:text-lg group-hover:text-lime-600">
+                                <small>More Ditails</small>
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-02(Dhaka) -->
+                    <div class="relative">
+                        <div
+                            class="hover:cursor-pointer bg-[url(./assets/dhaka.jpg)] bg-cover bg-center bg-no-repeat text-white p-10 hover:p-10 rounded-3xl flex flex-col gap-80 lg:gap-96 grow backdrop:brightness-75 hover:brightness-125 backdrop-blur-[1px] hover:blur-none duration-300 ease-in-out group  hover:w-full hover:lg:absolute ">
+                            <div class="">
+                                <small class="group-hover:text-lg group-hover:text-lime-600">23 Properties</small>
+                                <h6 class="font-bold group-hover:text-xl group-hover:text-lime-600">Dhaka</h6>
+                            </div>
+                            <div class="flex justify-between items-center font-bold group-hover:text-lg group-hover:text-lime-600">
+                                <small>More Ditails</small>
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card-03(Dhaka) -->
+                    <div class="relative sm:col-span-2 lg:col-span-1">
+                        <div
+                            class="hover:cursor-pointer bg-[url(./assets/dhaka.jpg)] bg-cover bg-center bg-no-repeat text-white p-10 hover:p-10 rounded-3xl flex flex-col gap-80 lg:gap-96 grow backdrop:brightness-75 hover:brightness-125 backdrop-blur-[1px] hover:blur-none duration-300 ease-in-out group  hover:w-full hover:lg:absolute lg:bg-cover lg:bg-center sm:bg-fixed lg:bg-local">
+                            <div class="">
+                                <small class="group-hover:text-lg group-hover:text-lime-600">23 Properties</small>
+                                <h6 class="font-bold group-hover:text-xl group-hover:text-lime-600">Dhaka</h6>
+                            </div>
+                            <div class="flex justify-between items-center font-bold group-hover:text-lg group-hover:text-lime-600">
+                                <small>More Ditails</small>
+                                <i class="fa-solid fa-circle-info"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Articles and News Section  -->
-        <section class="max-w-screen-lg mx-auto px-6 pb-16 lg:pt-12">
+        <section id="blogs" class="max-w-screen-lg mx-auto px-6 pb-16 lg:pt-12">
             <!-- Text Contents -->
             <div class="text-center">
                 <small class="text-base font-bold text-[#494949] py-1 px-4 rounded-2xl lg:ml-4 bg-[#abef5f33]">
@@ -591,7 +661,7 @@
         <section class="bg-[url('./assets/bg.jpg')]">
             <div class="max-w-screen-lg mx-auto px-6 py-16">
                 <!-- Text Contents -->
-                <div class="text-center">
+                <div id="contactus" class="text-center">
                     <small class="text-base font-bold text-[#494949] py-1 px-4 rounded-2xl lg:ml-4 bg-[#abef5f33]">
                         <i class="fa-solid fa-arrow-right-long"></i>
                         <span>Let&#39;s Connect</span>
@@ -641,7 +711,8 @@
 
     <!-- Footer Section -->
     <footer class="bg-[#1C1C1C]">
-        <div class="max-w-screen-lg mx-auto px-6 py-20 text-[#E9E9E9] text-center grid  gap-8 sm:gap-12 justify-items-center">
+        <div
+            class="max-w-screen-lg mx-auto px-6 py-20 text-[#E9E9E9] text-center grid  gap-8 sm:gap-12 justify-items-center">
             <!-- Text Container -->
             <div class=" grid justify-items-center max-w-2xl gap-4">
                 <!-- Brand Name -->
@@ -660,21 +731,22 @@
             <!-- Footer Links -->
             <div class="w-full max-w-2xl">
                 <ul class="flex flex-col sm:justify-between sm:flex-row gap-7 sm:gap-0">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
                 </ul>
             </div>
             <!-- Book Consult Button -->
             <button
-            class="btn group bg-[#ABEF5F] border-none rounded-[32px] hover:bg-[#acef5fb0] hover:border-[#ABEF5F]  hover:opacity-90 duration-300 ease-linear">
-            <span class="font-extrabold text-xl">Book Consult</span>
-            <div class="bg-[#1C1C1C] w-8 h-8 rounded-full flex items-center justify-center group-hover:opacity-90 duration-300 ease-linear">
-                <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
-            </div>
-        </button>
+                class="btn group bg-[#ABEF5F] border-none rounded-[32px] hover:bg-[#acef5fb0] hover:border-[#ABEF5F]  hover:opacity-90 duration-300 ease-linear">
+                <span class="font-extrabold text-xl">Book Consult</span>
+                <div
+                    class="bg-[#1C1C1C] w-8 h-8 rounded-full flex items-center justify-center group-hover:opacity-90 duration-300 ease-linear">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                </div>
+            </button>
         </div>
     </footer>
 </body>
